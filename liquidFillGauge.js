@@ -12,7 +12,7 @@ config1.circleColor = "#66ccff";
 config1.textColor = "white";
 config1.waveTextColor = "white";
 config1.waveColor = "#ccefff";
-config1.circleThickness = 0.2;
+config1.circleThickness = 0.1;
 config1.textVertPosition = 0.2;
 config1.waveAnimateTime = 1000;
 config1.displayPercent = true;
@@ -69,7 +69,7 @@ function loadLiquidFillGauge(elementId, value, config) {
             .domain([0, 100]);
     }
 
-    var textPixels = (config.textSize * radius / 2);
+    var textPixels = (config.textSize * radius / 4);
     var textFinalValue = parseFloat(value).toFixed(2);
     // var textStartValue = config.valueCountUp?config.minValue:textFinalValue;
     var textStartValue = parseFloat(value).toFixed(2);
